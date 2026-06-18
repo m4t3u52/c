@@ -1,0 +1,28 @@
+#include <iostream>
+
+int main() {
+        printf("Simple calc\n");
+
+        while(1) {
+            int number1 = 0;
+            int *ptrnumber1 = &number1;
+            printf("enter first number: ");
+            scanf("%d", ptrnumber1);
+
+            int number2 = 0;
+            int *ptrnumber2 = &number2;
+            printf("enter second number: ");
+            scanf("%d", ptrnumber2);
+            if (*ptrnumber1 == 0 || *ptrnumber2 == 0) {
+                break;
+                }
+
+            printf("%d + %d = %d\n", *ptrnumber1, *ptrnumber2, *ptrnumber1 + *ptrnumber2);
+            printf("%d - %d = %d\n", *ptrnumber1, *ptrnumber2, *ptrnumber1 - *ptrnumber2);
+            printf("%d / %d = %d\n", *ptrnumber1, *ptrnumber2, *ptrnumber1 / *ptrnumber2);
+            printf("%d * %d = %d\n", *ptrnumber1, *ptrnumber2, *ptrnumber1 * *ptrnumber2);
+            }
+
+        printf("\nEnd for now:)\n");
+        return 0;
+    }
